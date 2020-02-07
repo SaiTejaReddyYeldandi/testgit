@@ -1,0 +1,36 @@
+sql assignment":
+1
+create a table production unit  with unitid,location columnns
+
+2. create a table items with item_id,itemtitle,price,unit_id columns.
+3. add primary key constrsaint to production unit table.
+4. add 
+
+create table ProductionUnit(unit_id number primary key,location varchar(20));
+create table Items(item_id number primary key,item_title varchar(10),price number(10),unit_id,foreign key(unit_id) references ProductionUnit(unit_id));
+describe items;
+describe ProductionUnit;
+insert into ProductionUnit(unit_id,location)
+values(1,'hyderbad');
+insert into ProductionUnit(unit_id,location)
+values(2,'mumbai');
+insert into ProductionUnit(unit_id,location)
+values(3,'pune');
+insert into ProductionUnit(unit_id,location)
+values(4,'chennai');
+insert into ProductionUnit(unit_id,location)
+values(5,'delhi');
+select * from ProductionUnit;
+insert into Items(item_id,item_title,price,unit_id)
+values(101,'oneplus',52000,1);
+insert into Items(item_id,item_title,price,unit_id)
+values(102,'Apple',90000,2);
+insert into Items(item_id,item_title,price,unit_id)
+values(103,'sumsung',65000,3);
+insert into Items(item_id,item_title,price,unit_id)
+values(104,'pixel',70000,4);
+insert into Items(item_id,item_title,price,unit_id)
+values(105,'ROG',80000,5);
+select * from Items;
+
+
