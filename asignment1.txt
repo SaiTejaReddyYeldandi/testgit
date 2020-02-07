@@ -34,3 +34,4 @@ values(105,'ROG',80000,5);
 select * from Items;
 
 
+putting it on git for practise
